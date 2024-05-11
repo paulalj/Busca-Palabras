@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
+body{
+    max-width: 1024px;
+    margin: auto;
+    font-family: "Ojuju", sans-serif;
+    background-color: #ccc;
+}
+
+header{
+    max-width: 1024px;
+    margin: auto;
+}
+
+#container{
+    background-color: #ccc;
+    display: none;
+}
+
+#seleccion{
+    background-color: #ccc;
+    display: none;
+}
+
+#seleccion2{
+    background-color: #ccc;
+    display: none;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#current_word{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#adivina{
+    width: 300px;
+    height: 330px;
+}
+
+#btn, #btn1, #btn2, #btn3, #btn4{
+    margin-top: 15px;
+    display: block;
+    color: #fff;
+    background-color: #f77754;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 32px;
+    transition: 0.8s;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 #fbfbfb;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #f77754;
+}
+
+.message{
+    margin-top: 15px;
+    font-weight: bold;
+    display: none;
+    font-size: 2rem;
+}
+
+.tiempo{
+    font-size: 2rem;
+    color: black;
+}
+
+#juego{
+    min-width: 400px;
+}
+
+#letra{
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.ganar{
+    font-size: 4rem;
+    color: red;
+}

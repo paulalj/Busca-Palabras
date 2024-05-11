@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de adivinar la palabra">
+    <meta name="keywords" content="Juego de adivinar la palabra">
+    <meta name="author" content="Paula">
+    <title>Adivina Palabras</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Título de la página -->
+        <h1> ~ Adivina la palabra ~ </h1>
+    </header>
+    <main>
+        <section id="inicio">
+            <!-- Sección para introducir el nombre del jugador -->
+            <p>Introduce tu nombre : </p>
+            <input type="text" id="input1">
+            <input type="button" id="btn1" value="Enviar" onclick="ObtenerNombre()">
+        </section>
+        <section id="seleccion">
+            <!-- Sección para el modo de juego -->
+            <article id="seleccion1">
+                <p>Selecciona el modo de juego: </p>
+                <input type="button" id="btn2" value="Modo ordenador" onclick="Jugar()">
+                <input type="button" id="btn3" value="Modo persona" onclick="ModoPersona()">
+            </article>
+        </section>
+        <article id="seleccion2">
+            <!-- Sección para guardar la palabra que introduce otra persona -->
+            <p>Pásale el ordenador a tu compañero.</p>
+            <p>Introduce la palabra a adivinar: </p>
+            <input type="text" id="input2">
+            <input type="button" id="btn4" value="Enviar" onclick="GuardarPalabra()">
+        </article>
+        <div id="container">
+            <!-- Sección para jugar -->
+            <div class="row">
+                <div id="juego">
+                    <div id="current_word"></div>
+                    <p class="bold">Introduce una letra: </p>
+                    <input type="text" id="letra">
+                    <input type="button" id="btn" onclick="evaluarLetra()" value="Verificar letra">
+                </div>
+                <div class="message">Nooo! Perdiste :(</div>
+                <div id="adivina"></div>
+            </div>
+            <div id="contador"></div>
+        </div>
+    </main>
+
+    <script src="./Assets/JS/main.js"></script>
+</body>
+
+</html>
